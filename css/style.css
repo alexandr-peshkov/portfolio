@@ -1,0 +1,30 @@
+body {
+    font-size: 16px;
+    color: #fff;
+}
+
+header {
+    background: url(../images/header-background.png)50% 50% repeat-x;
+    min-height: 891px;
+    background-size: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    padding: 60px 0 0 0;
+}
+
+.container-center {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.logo p {
+    font-size: 24px;
+}
+
+.logo p+p {
+    font-size: 18px;
+    font-weight:bold;
+}
