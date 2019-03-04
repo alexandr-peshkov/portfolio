@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../web-studio/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&amp;subset=cyrillic" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
@@ -17,18 +19,39 @@
         <nav>
             <div class="container-center">
                 <div class="grid">
-                    <div class="logo">
-                        <p>Пешков Александр Сергеевич</p>
+                    <div class="logo-slogan">
+                        <p><a href="#"> Пешков Александр Сергеевич</a></p>
                         <p>Web design developer</p>
                     </div>
 
-                    <div class="menu">меню</div>
+                    <div id="sweeties" class="menu">
+                        <span class="title">Сладости (нажми меня)!</span>
+                        <ul>
+                          <li>Торт</li>
+                          <li>Пончик</li>
+                          <li>Пирожное</li>
+                        </ul>
+                    
+                      </div>
+
+                    <div class="header-title">Наши сайты приносят прибыль
+                        вашему бизнесу</div>
+
                 </div>
+                <!-- end grid -->
+                <a href="#" class="button">смотреть примеры</a>
             </div>
             <!-- end container-center -->
         </nav>
     </header>
-
+    <script>
+        var menuElem = document.getElementById('sweeties');
+        var titleElem = menuElem.querySelector('.title');
+    
+        titleElem.onclick = function() {
+          menuElem.classList.toggle('open');
+        };
+      </script>
 </body>
 
 </html>
