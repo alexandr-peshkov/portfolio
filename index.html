@@ -8,14 +8,18 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="js/main.js">
 
     <title>Document</title>
 </head>
 
 <body>
     <header>
+
         <nav>
             <div class="container-center">
                 <div class="grid">
@@ -24,34 +28,27 @@
                         <p>Web design developer</p>
                     </div>
 
-                    <div id="sweeties" class="menu">
-                        <span class="title">Сладости (нажми меня)!</span>
-                        <ul>
-                          <li>Торт</li>
-                          <li>Пончик</li>
-                          <li>Пирожное</li>
-                        </ul>
-                    
-                      </div>
 
-                    <div class="header-title">Наши сайты приносят прибыль
-                        вашему бизнесу</div>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Примеры работ</a></li>
+                            <li><a href="#">О авторе</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
 
                 </div>
                 <!-- end grid -->
+                <div class="header-title">Cайты которые приносят прибыль<br>
+                    вашему бизнесу</div>
                 <a href="#" class="button">смотреть примеры</a>
             </div>
             <!-- end container-center -->
         </nav>
     </header>
-    <script>
-        var menuElem = document.getElementById('sweeties');
-        var titleElem = menuElem.querySelector('.title');
-    
-        titleElem.onclick = function() {
-          menuElem.classList.toggle('open');
-        };
-      </script>
+
 </body>
 
 </html>
